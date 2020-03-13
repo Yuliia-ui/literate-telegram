@@ -1,0 +1,81 @@
+font-family: 'Ubuntu', sans-serif;
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.quotes::before {
+  display: block;
+  content: '';
+  width: 60px;
+  height: 2px;
+  background-image: url(../images/verticalline-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+.description__text {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: #464646;
+  text-align: left;
+}
+
+.program {
+  margin-top: 40px;
+  border-radius: 9px;
+  background-color: #7550de;
+  padding: 24px;
+}
+.program__text {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  color: #ffffff;
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  text-align: center;
+}
+
+.yellow-line::before {
+  margin: auto;
+  display: block;
+  content: '';
+  width: 60px;
+  height: 2px;
+  background-image: url(../images/verticalline-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: auto;
+}
