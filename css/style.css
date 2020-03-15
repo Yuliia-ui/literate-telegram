@@ -47,13 +47,17 @@ body {
 
   .description__content--image {
     display: inline-block;
-    width: 620px;
+    width: 660px;
     height: 320px;
     content: '';
-    background-image: url(../images/children2.jpg);
+    background-image: url(../images/children@2x.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+  }
+
+  .description {
+    margin-bottom: 70px;
   }
 }
 
@@ -246,7 +250,7 @@ body {
   .program::before {
     position: absolute;
     width: 5px;
-    height: 70px;
+    height: 60px;
     left: 120px;
     top: 50px;
     background-image: url(../images/verticalline-desktop.png);
