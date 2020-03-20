@@ -32,7 +32,7 @@ body {
   width: 280px;
   height: 320px;
   content: '';
-  background-image: url(../images/children.png);
+  background-image: url(./src/images/children.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -50,7 +50,7 @@ body {
     width: 660px;
     height: 320px;
     content: '';
-    background-image: url(../images/img.png);
+    background-image: url(./src/images/img.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -63,7 +63,7 @@ body {
 
 @media screen and (min-width: 1100px) {
   .container {
-    max-width: 1234px;
+    max-width: 1300px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -73,17 +73,6 @@ body {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: 0;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .description__about {
@@ -99,7 +88,7 @@ body {
   content: '';
   width: 18px;
   height: 13px;
-  color: #e9ac38;
+  color: $color-orange;
   background-image: url(../images/quote1.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -120,7 +109,7 @@ body {
     position: absolute;
     top: -10px;
     left: -30px;
-    color: #fcae26;
+    color: $color-orange-second;
   }
 }
 
@@ -138,14 +127,14 @@ body {
     padding-right: 30px;
     padding-left: 49px;
     font-size: 18px;
-    color: #444444;
+    color: $color-strong-grey;
   }
 
   .description__about::before {
     position: absolute;
     top: -10px;
     left: 25px;
-    color: #fcae26;
+    color: $color-orange-second;
   }
 
   .description__content--image {
@@ -153,7 +142,7 @@ body {
     width: 649px;
     height: 397px;
     content: '';
-    background-image: url(../images/img2.png);
+    background-image: url(./src/images/img2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -163,19 +152,19 @@ body {
 .description__text {
   padding-bottom: 10px;
   margin: 0 auto;
-  font-family: 'Ubuntu';
+  font-family: $font-text;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 1px;
   line-height: 20px;
-  color: #464646;
+  color: $color-text;
   text-align: left;
 }
 
 .program {
   margin-top: 30px;
   border-radius: 9px;
-  background-color: #7550de;
+  background-color: $color-lilac;
   padding: 24px;
 }
 
@@ -184,7 +173,7 @@ body {
     position: relative;
     font-size: 20px;
     filter: drop-shadow(3px 5.196px 9px rgba(0, 0, 0, 0.15));
-    background-color: #824fe3;
+    background-color: $color-dark-lilac;
     padding-left: 100px;
     padding-right: 100px;
   }
@@ -195,7 +184,7 @@ body {
   letter-spacing: 1px;
   line-height: 24px;
   color: #ffffff;
-  font-family: 'Ubuntu';
+  font-family: $font-text;
   font-weight: 400;
   text-align: center;
 }
@@ -206,7 +195,7 @@ body {
     letter-spacing: 1px;
     line-height: 28px;
     color: #ffffff;
-    font-family: 'Ubuntu';
+    font-family: $font-text;
     font-weight: 400;
     text-align: left;
   }
@@ -242,7 +231,7 @@ body {
     font-size: 25px;
     border-radius: 4px;
     filter: drop-shadow(3px 5.196px 9px rgba(0, 0, 0, 0.15));
-    background-color: #824fe3;
+    background-color: $color-dark-lilac;
     padding-left: 150px;
     padding-right: 150px;
   }
